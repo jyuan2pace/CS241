@@ -1,0 +1,32 @@
+There are two ways to use the ANN package:
+
+a. The simplest (but somewhat shortsighted) way is to drag and drop
+   the ANN folder into one of the already-existing folders containing
+   classes for your Java development environment (e.g., JBuilder,
+   CodeWarrior, Sun SDK, etc.).  The drawback is that if you uninstall, 
+   delete, or upgrade your environment, then you will likely lose the 
+   ANN folder and have to redo this in your new environment.
+
+b. The preferable way is to create a folder or directory in which
+   you will store your own packages and libraries, drag-and-drop the
+   ANN folder into this folder, and then set up an environment variable
+   named CLASSPATH that points to this folder.  For example:
+
+ 1) If you use Windows and your folder is named C:\Java\ClassLib,
+    add the following line to your autoexec.bat file:
+ 
+      SET CLASSPATH=.;C:\JAVA\CLASSLIB;%CLASSPATH%
+
+ 2) If you use MacOS X and your folder is named /home/jca/java/classLib,
+    add the following line to the .cshrc file in your home directory:
+
+      setenv CLASSPATH .:/home/jca/java/classLib/
+
+ 3) If you use Linux and your folder is named /home/jca/java/classLib,
+    add the following line to the .bashrc file in your home directory:
+
+      export CLASSPATH=.:/home/jca/java/classLib/
+
+Then restart any shells (or logout and log back in again) and javac
+and java should be able to find the ann library.
+
