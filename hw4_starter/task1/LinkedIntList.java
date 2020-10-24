@@ -97,27 +97,27 @@ public class LinkedIntList {
 
     /** Recursively add an element to the idx-th of the list */
    public void add(int idx, int data) {
-        //TODO：Your code here
+        //TODO:Your code here
         throw new UnsupportedOperationException("Not implemented yet.");
     }
     /**  Recursively Retrieves the idx-th element of the list.*/
     public int getByIndex(int idx) {
-        //TODO：Your code here
+        //TODO:Your code here
         throw new UnsupportedOperationException("Not implemented yet.");
     }
     /**  Recursively removes the first element of the list which equals val.*/
     public void removeByValue(int val) {
-        //TODO: your code here
+        //TODO:your code here
         throw new UnsupportedOperationException("Not implemented yet.");
     }
     /**  Recursively reverse the list in place without using new.*/
     public void reverseInPlace() {
-        // TODO: your code here
+        // TODO:your code here
         throw new UnsupportedOperationException("Not implemented yet.");
     }
     /* Non-recursive, works like insertionSort to maintain a sorted linked list*/
     public void sortedAdd(int val) {
-        // TODO: your code here
+        // TODO:your code here
         throw new UnsupportedOperationException("Not implemented yet.");
     }
 
