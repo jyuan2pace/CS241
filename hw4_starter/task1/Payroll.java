@@ -8,7 +8,6 @@ import java.util.*;
 import java.io.*;
 public class Payroll
 {
-    final int MAX = 30;
     //here the GenericLinkedList is your generalized LinkedIntList
     //DO NOT USE java ready-made lists.
     GenericLinkedList<Employee> payroll = new GenericLinkedList<Employee>();
@@ -56,10 +55,6 @@ public class Payroll
             {
                 System.out.println ("The file " + file + " was not found.");
             }
-            catch (IOException exception)
-            {
-                System.out.println (exception);
-            }
         }
         // ------------------------------------------
         // Returns the number of employees who
@@ -77,7 +72,7 @@ public class Payroll
         // ------------------------------------------------
         private int overtime (int start)
         {
-            //TODO：Your code here
+            //TODO:Your code here
             throw new UnsupportedOperationException("Not implemented yet.");
         }
     }
