@@ -6,7 +6,12 @@ public class BST<AnyType extends Comparable<AnyType>>
     {
         root = null;
     }
-    
+
+    public BST(TreeNode root)
+    {
+        this.root = root;
+    }
+
     public boolean isEmpty()
     {
         return root == null;
@@ -149,25 +154,68 @@ public class BST<AnyType extends Comparable<AnyType>>
             this.left = left;
             this.right = right;
         }
+        private TreeNode(TreeNode node) {
+            this.data = node.data;
+            this.left = node.left;
+            this.right = node.right;
+        }
     }
 
     //--------Your HW5 functions start here ---------------//
+    private int height_helper(TreeNode n) {
+        // TODO: your code here
+        // base condition: empty tree
+        // recursively solves the height of the left child subtree
+        // and the height of the right child subtree, when combining
+        // results from subtrees, if height_left_child is greater
+        // than height_right_child, what is the height of the current node?
+        throw new UnsupportedOperationException();
+    }
     public int height(){
+        //TODO: your code here
+        //hint: implement helper height_helper(TreeNode root);
         throw new UnsupportedOperationException();
     }
 
-    public boolean isBalance() {
+    public boolean isBalance(){
+        //TODO: your code here
+        //hint: if we declare helper
+        //boolean isBalanced_helper(TreeNode subtree);
+        //the helper can return a boolean value to indicate if a subtree
+        //is balanced, but we also need the heights of its left subtree and
+        //right subtree so we can compare to determine if it is balanced.
+        //how can we get two return values in one function call?
         throw new UnsupportedOperationException();
     }
 
     public boolean equals(Object tree2) {
+        //TODO: your code here
+        //hint: implement private boolean equals_helper(TreeNode n1, TreeNode n2)
+         throw new UnsupportedOperationException();
+    }
+
+    public BST<AnyType> mirrorTree(){
+        //TODO: your code here
+        //hint: implement private TreeNode mirrorTree(TreeNode node)
         throw new UnsupportedOperationException();
     }
 
-    static BST<Integer> skewedTree(int n) {
+    static public BST<Integer> skewedTree(int n) {
+        //TODO: your code here
+        //hint: to measure time, use System.nanoTime();
+        //to capture start time and end time.
         throw new UnsupportedOperationException();
     }
-    static BST<Integer> balancedTree(int n) {
+
+    static public BST<Integer> balancedTree(int n) {
+        //TODO: your code here
+        //hint: the only difference from skewedTree is the order of
+        //insertion. implement the insertion function:
+        //static private void seqinsert(BST<Integer> tree, int low, int high)
+        //following pseudo code in the hw5 document, which means
+        // if you have input 7, and thus you have a sequence of number
+        //1,2,3,4,5,6,7 then the insertion order is
+        //4,2,1,3,6,5,7 which creates a balanced BST.
         throw new UnsupportedOperationException();
     }
     //--------Your HW5 fundtions end here ------------------//
