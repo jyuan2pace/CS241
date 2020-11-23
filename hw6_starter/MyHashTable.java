@@ -17,9 +17,7 @@ public class MyHashTable<DataType> {
 		int bucket = Math.abs(item.hashCode() % numBuckets);
 		buckets[bucket].add(item);
 		count ++;
-		if(count >= 0.5* numBuckets) {
-			rehash();
-		}
+		//TODO: your code here to call rehash as needed
 	}
 
 	public boolean contains(DataType item) {
